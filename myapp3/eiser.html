@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>easier ecommerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .header-1 {
+            background-color: rgb(247, 247, 247);
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .header-1 ul {
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            
+        }
+        
+        .header-1 ul li {
+            margin: 10px;
+            font-size: 11px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .header-1 ul li a:hover{
+            color: rgb(7, 192, 7);
+            cursor: pointer;
+        }
+        .header-2 {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .shopcategory{
+            
+            position: absolute;
+            top:40px;
+            left: 500px;   
+            background: white;
+            z-index: 1000;
+            flex-direction: column;
+            visibility: hidden;
+            width: 210px;
+        
+        }
+        .shopcategory li{
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        .shop:hover .shopcategory{
+            visibility: visible;
+            z-index: 1000;
+            position: absolute;
+            
+        }
+        .sub-menu a:hover{
+            background-color: #71cd14;
+            color: white;
+        }
+        
+        .blog{
+            position: absolute;
+            top:40px;
+            left: 575px;   
+            background: white;
+            z-index: 1;
+            flex-direction: column;
+            visibility: hidden;
+            width: 210px;
+        }
+        .blog li{
+            text-transform: uppercase;
+        
+        }
+        .blog_a:hover .blog{
+            visibility: visible;
+            
+        }
+        .hover:hover {
+            color: #71cd14;
+        }
+        .page{
+            position: absolute;
+            top:40px;
+            left: 655px;   
+            background: white;
+            z-index: 1;
+            flex-direction: column;
+            visibility: hidden;
+            width: 210px;
+        }
+        .page li{
+            text-transform: uppercase;
+        }
+        .page_a:hover .page{
+            visibility: visible;
+        }
+        .right ul li a i:hover{
+            color: #71cd14;
+        }
+        
+        
+        @media (max-width:1200px) {
+            .header-2 .center {
+                display: none;
+            }
+        
+            .header-2 .right {
+                display: none;
+            }
+        
+            .header-1 {
+        
+                display: none;
+            }
+        }
+        
+        .left {
+            margin: 25px 70px;
+        }
+        
+        .header-2 ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .center ul {
+            margin: 15px;
+        }
+        
+        .center li {
+            margin: 25px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+        
+        
+        .right ul {
+            margin: 25px 70px;
+        }
+        
+        .right ul li {
+            margin: 10px;
+        }
+        
+        .image1 {
+            background-image: url("https://themewagon.github.io/eiser/img/banner/banner-bg.jpg");
+            height: 130vh;
+            font-family: sans-serif;
+            background-position: center;
+            background-size: cover;
+        
+        }
+        
+        .image1 p {
+            color: white;
+            font-size: 14px;
+            padding-left: 90px;
+            padding-top: 230px;
+            margin-bottom: 15px;
+        }
+        
+        .image1 h3 {
+            color: white;
+            font-size: 60px;
+            padding-left: 85px;
+            margin-bottom: 15px;
+        }
+        
+        .image1 span {
+            color: rgb(7, 192, 7);
+        
+        }
+        
+        .image1 h4 {
+            padding-left: 87px;
+            color: white;
+            margin-bottom: 50px;
+        
+        }
+        
+        #btn {
+            color: white;
+        }
+        
+        .button {
+            margin-left: 85px;
+            background-color: rgb(7, 192, 7);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            font-family: sans-serif;
+            font-size: 12px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .button:hover {
+            color: rgb(7, 192, 7);
+            border: 1px solid rgb(7, 192, 7);
+        }
+        
+        .boxes {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .box {
+            height: 170px;
+            width: 250px;
+            border: 1px solid rgb(228, 227, 227);
+            margin: 5px 0px;
+        }
+        
+        .box p {
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .box span {
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 13px;
+            color: rgb(145, 144, 144);
+        }
+        
+        .box i {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+        
+        .fetured-product h2 {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        
+        .fetured-product p {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            color: rgb(144, 141, 141);
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        
+        .image2 {
+            display: flex;
+            /* justify-content: center; */
+            margin: 35px;
+            flex-wrap: wrap;
+        }
+        
+        .product-image {
+            width: 350px;
+            height: 450px;
+            border: 1px solid rgb(196, 196, 196);
+            margin-top: 40px;
+            flex-grow: 1 1;
+            margin-left: 30px;
+            
+           
+        }
+        
+        .product-image1 img {
+            height: 350px;
+            position: relative;
+            width: 100%;
+           
+         
+        }
+        
+        .content {
+            margin: 5px 20px;
+            font-family: sans-serif;
+            font-size: 13px;
+            line-height: 2;
+            
+            
+        }
+        
+        .content span {
+            margin-left: 20px;
+            font-size: 15px;
+            color: rgb(181, 178, 178);
+        }
+        
+        .content h6 {
+            font-size: 25px;
+        }
+        
+        .content a {
+            text-decoration: none;
+        }
+        
+        
+        @media (max-width:400px) {
+        
+            .image1 h3 {
+        
+                font-size: 30px;
+            }
+        
+            /* .image1{
+        
+                background-position:;
+            } */
+        
+        }
+        .mencollection{
+            background-image: url(https://themewagon.github.io/eiser/img/offer-bg.png);
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+            margin-top: 120px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .typeing{
+            p{
+                padding: 20px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 25px;
+                color: #4a4a4a;
+                margin-left: 50px;
+            }
+            h1{
+                font-size: 90px;
+                font-family: sans-serif
+            }
+            margin-left: 400px ;
+            padding: 100px;
+        
+        }
+        .col{
+            background-color: #71cd14;
+            color: white;
+            padding: 15px 25px;
+            font-size: 12px;
+            border-radius: 5px;
+            border: none;
+            margin-left: 130px ;
+            margin-top: 40px;
+        }
+        #time{
+            font-family: sans-serif;
+            font-size: 13px;
+            margin-left: 130px;
+        }
+        .new-product h2 {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        
+        .new-product p {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            color: rgb(144, 141, 141);
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .collection{
+            margin-top: 50px;
+            /* border: 2px solid black; */
+            /* height: 500px; */
+            /* width: 100%; */
+            display: flex;
+            justify-content: center;
+        }
+        .collect-1{
+            height: 750px;
+            width: 43%;
+            margin: 15px;
+        }
+        .collect{
+            height: 750px;
+            width: 43%;
+            margin: 15px;
+            background-color: rgb(241, 243, 244);
+            
+            img{
+                margin-top: 100px;
+                margin-left: 20px;
+            }
+            P{
+                font-family: sans-serif;
+                margin-left:  170px; 
+                margin-top: 90px;
+                font-size: 20px;
+            }
+            h1{
+                font-family: sans-serif;
+                margin-left:  80px;
+                margin-top: 20px;
+            }
+            p span{
+                font-size: 30px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-left: 50px;
+            }
+            button{
+                margin-left: 200px;
+                margin-top: 30px;
+                background-color: #71cd14;
+                padding: 15px 30px;
+                color: white;
+                font-size: 12px;
+                border: none;
+                border-radius: 5px;
+            }
+        
+        }
+        #collect1{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+        }
+        .pics1{
+            width: 260px;
+            height: 350px;
+            border: 1px solid rgb(235, 231, 231);
+        }
+        .pics2{
+            width: 260px;
+            height: 350px;
+            border: 1px solid rgb(235, 231, 231);
+            margin-left: 22px;
+           
+        }
+        .pics3{
+            width: 260px;
+            height: 350px;
+            border: 1px solid rgb(235, 231, 231);
+            margin-top: 45px;
+        }
+        .pics4{
+            width: 260px;
+            height: 350px;
+            border: 1px solid rgb(235, 231, 231);
+            margin-left: 22px;
+            margin-top: 45px;
+        }
+        .imga{
+           width: 100%;
+           height: 250px;
+        }
+        .imga img{
+            width: 100%;
+            height: 250px;
+        }
+        .con p{
+            margin: 20px;
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .con p:hover{
+            color: #71cd14;
+            cursor: pointer;
+        
+        }
+        .con span{
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: 800px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .con del{
+            margin-left: 30px;
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #797979;
+        }
+        .inspired-product h2 {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        
+        .inspired-product p {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            color: rgb(144, 141, 141);
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .products{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item{
+            width: 260px;
+            height: 350px;
+            border: 1px solid rgb(235, 231, 231);
+            margin: 15px;
+            margin-top: 50px;
+        }
+        .item-1{
+            width: 100%;
+            height: 250px;
+            img{
+                width: 100%;
+                height: 250px;
+            }
+        }
+        .cont p{
+            margin: 20px;
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .cont p:hover{
+            color: #71cd14;
+            cursor: pointer;
+        
+        }
+        .cont span{
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: 800px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .cont del{
+            margin-left: 30px;
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #797979;
+        }
+        .latest-blog h2 {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        
+        .latest-blog p {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            color: rgb(144, 141, 141);
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .latest-image2 {
+            display: flex;
+            margin: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .latest-image {
+            width: 350px;
+            margin-top: 40px;
+            flex-grow: 1 1;
+            margin-left: 30px;
+        }
+        
+        .latest-image1 img {
+            height: 250px;
+            width: 100%;
+            transition: transform 0.2s ease-in-out;
+            
+        }
+        .latest-image1 img:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        
+        .para {
+            font-family: sans-serif;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+        .para p{
+            margin-top: 20px;
+            color: #797979;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        .para span {
+            margin-left: 20px;
+            font-size: 15px;
+            color: #797979;
+        }
+        
+        .para h5 {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: 530;
+        }
+        .para h6{
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .para h5:hover{
+            cursor: pointer;
+            color: #71cd14;
+        }
+        .para h6:hover{
+            cursor: pointer;
+            color: #71cd14;
+        }
+        .footer{
+            height: 100vh;
+            width: 100%;
+            background-color: #0d0d1f;
+            margin-top: 150px;
+            position: relative;
+        }
+        .footer1{
+            position: absolute;
+            margin-top: 120px;
+        
+        }
+        .footer .mul ul{
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 250px;
+            color: white;
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 18px;
+            flex-wrap: wrap;
+        
+        }
+        .footer .mul1 ul{
+            position: absolute;
+            color: #797979;
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 3;
+            margin-left: 100px;
+        }
+        .footer .mul2 ul{
+            position: absolute;
+            color: #797979;
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 3;
+            margin-left: 300px;
+        }
+        .footer .mul3 ul{
+            position: absolute;
+            color: #797979;
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 3;
+            margin-left: 480px;
+        }
+        .footer .mul4 ul{
+            color: #797979;
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 3;
+            margin-left: 650px;
+            
+        }
+        .footer .mul5 {
+            color: #797979;
+            font-family: sans-serif;
+            font-size: 14px;
+            margin-left: 830px;
+            margin-top: -12.50%;
+        }
+        .subs{
+            margin-left: 45%;
+            margin-top: -10.3%;
+            font-family: sans-serif;
+            
+        }
+        .copyright{
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            margin-top: 10%;
+            margin-left: 8.2%;
+            flex-wrap: wrap;
+        }
+        .copyright span{
+            font-size: 13px;
+        }
+        .icon{
+            color: white;
+            margin-left: 70%;
+            margin-top: -28px;
+        }
+        
+        .hover_div{
+            width: 25%;
+            height: 20px;
+            background-color: #71cd14   ;
+            padding: 20px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            /* top: 308px; */
+            visibility: hidden;
+        }
+        .icondiv{
+            background-color: white;
+            width: 13%;
+            padding: 8px;
+            border-radius: 100%;
+            font-size: 12px;
+            text-align: center;
+           
+        }
+        .product-image1{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            width: 100%;
+        }
+        .product-image:hover .hover_div{
+            visibility: visible;
+            transition: all 400ms ease;
+            
+        }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+      integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header-1">
+      <div>
+        <ul>
+          <li>PHONE: +01 256 25 235</li>
+          <li>|</li>
+          <li>EMAIL: INFO@EISER.COM</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="">GIFT CARD</a></li>
+          <li>|</li>
+          <li><a href="">TRACK ORDER</a></li>
+          <li>|</li>
+          <li><a href="">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-2">
+      <div class="left">
+        <img src="https://themewagon.github.io/eiser/img/logo.png" alt="" />
+      </div>
+      <div class="center">
+        <ul>
+          <li><a href="eiser.html" style="color: #71cd14">HOME</a></li>
+          <li class="shop">
+            <a href="" class="hover">SHOP</a>
+            <ul class="shopcategory">
+              <li class="sub-menu">
+                <a href="shopcategory.html">shop category</a>
+              </li>
+              <hr />
+              <li class="sub-menu">
+                <a href="productdetails.html">product details</a>
+              </li>
+              <hr />
+              <li class="sub-menu">
+                <a href="productcheckout.html">product checkout</a>
+              </li>
+              <hr />
+              <li class="sub-menu"><a href="">shopping cart</a></li>
+            </ul>
+          </li>
+          <li class="blog_a">
+            <a href="" class="hover">BLOG</a>
+            <ul class="blog">
+              <li><a href="">blog</a></li>
+              <hr />
+              <li><a href="">blog details</a></li>
+            </ul>
+          </li>
+          <li class="page_a">
+            <a href="" class="hover">PAGES</a>
+            <ul class="page">
+              <li><a href="">tracking</a></li>
+              <hr />
+              <li><a href="">elements</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="hover">CONTECT</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-regular fa-heart"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="image1">
+      <p>MEN COLLECTION</p>
+      <h3>
+        <span>Show</span> Your <br />
+        Personal <span>Style</span>
+      </h3>
+      <h4>Fowl saw dry which a above together place.</h4>
+      <input type="submit" value="VIEW COLLECTION" class="button" />
+    </div>
+    <div class="boxes">
+      <div class="box">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <p>MONEY BACK GARUNTEE</p>
+        <span>Shall open divide a one</span>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-truck"></i>
+        <p>FREE DILIVERY</p>
+        <span>Shall open divide a one</span>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-headset"></i>
+        <p>ALWAYS SUPPORT</p>
+        <span>Shall open divide a one</span>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-shield-halved"></i>
+        <p>SECURE PAYMENT</p>
+        <span>Shall open divide a one</span>
+      </div>
+    </div>
+    <div class="fetured-product">
+      <h2>FEATURED PRODUCT</h2>
+      <p>Bring called seed first of third give itself now ment</p>
+      <div class="image2">
+        <div class="product-image">
+          <div class="product-image1">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-1.jpg"
+              alt=""
+            />
+            <div class="hover_div">
+              <div class="icondiv">
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="icondiv">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="icondiv">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <a href="">LATEST MEN'S SNEAKER</a><br />
+            <h6>
+              $25.00<span><del>$35.00</del></span>
+            </h6>
+          </div>
+        </div>
+        <div class="product-image">
+          <div class="product-image1">
+            <img
+              src="	https://themewagon.github.io/eiser/img/product/feature-product/f-p-2.jpg"
+              alt=""
+            />
+            <div class="hover_div">
+              <div class="icondiv">
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="icondiv">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="icondiv">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <a href="">RED WOMEN PURSES</a><br />
+            <h6>
+              $25.00<span><del>$35.00</del></span>
+            </h6>
+          </div>
+        </div>
+        <div class="product-image">
+          <div class="product-image1">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-3.jpg"
+              alt=""
+            />
+            <div class="hover_div">
+              <div class="icondiv">
+                <i class="far fa-eye"></i>
+              </div>
+              <div class="icondiv">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="icondiv">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <a href="">MEN STYLIST SMART WATCH</a><br />
+            <h6>
+              $25.00<span><del>$35.00</del></span>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mencollection">
+      <div class="typeing">
+        <p>ALL MEN'S COLLECTION</p>
+        <h1>50% OFF</h1>
+        <input type="submit" value="DISCOVER NOW" class="col" />
+        <p id="time">Limited Time Offer</p>
+      </div>
+    </div>
+    <div class="new-product">
+      <h2>NEW PRODUCTS</h2>
+      <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <div class="collection">
+      <div class="collect">
+        <p>COLLECTION OF 2019</p>
+        <h1>MEN’S SUMMER T-SHIRT</h1>
+        <img
+          src="https://themewagon.github.io/eiser/img/product/new-product/new-product1.png"
+          alt=""
+        />
+        <p><span>$120.70</span></p>
+        <button>ADD TO CART</button>
+      </div>
+      <div class="collect-1" id="collect1">
+        <div class="pics1">
+          <div class="imga">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/new-product/n1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="con">
+            <p>NIKE LATEST SNEAKER</p>
+            <span>$25.00<del>$35.00</del></span>
+          </div>
+        </div>
+        <div class="pics2">
+          <div class="imga">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/new-product/n2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="con">
+            <p>MEN'S DENIM JEANS</p>
+            <span>$25.00<del>$35.00</del></span>
+          </div>
+        </div>
+        <div class="pics3">
+          <div class="imga">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/new-product/n3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="con">
+            <p>QUARTZ HAND WATCH</p>
+            <span>$25.00<del>$35.00</del></span>
+          </div>
+        </div>
+        <div class="pics4">
+          <div class="imga">
+            <img
+              src="https://themewagon.github.io/eiser/img/product/new-product/n4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="con">
+            <p>ADIDAS SPORT SHOE</p>
+            <span>$25.00<del> $35.00</del></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inspired-product">
+      <h2>INSPIRED PRODUCTS</h2>
+      <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <div class="products">
+      <div class="item">
+        <div class="item-1">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/inspired-product/i1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="cont">
+          <p>NIKE LATEST SNEAKER</p>
+          <span>$25.00<del>$35.00</del></span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-1">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/inspired-product/i2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="cont">
+          <p>NIKE LATEST SNEAKER</p>
+          <span>$25.00<del>$35.00</del></span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-1">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/inspired-product/i3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="cont">
+          <p>NIKE LATEST SNEAKER</p>
+          <span>$25.00<del>$35.00</del></span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-1">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/inspired-product/i4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="cont">
+          <p>NIKE LATEST SNEAKER</p>
+          <span>$25.00<del>$35.00</del></span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-1">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/inspired-product/i5.jpg"
+            alt=""
+          />
+        </div>
+        <div class="cont">
+          <p>NIKE LATEST SNEAKER</p>
+          <span>$25.00<del>$35.00</del></span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-1">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/inspired-product/i6.jpg"
+            alt=""
+          />
+        </div>
+        <div class="cont">
+          <p>NIKE LATEST SNEAKER</p>
+          <span>$25.00<del>$35.00</del></span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-1">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/inspired-product/i7.jpg"
+            alt=""
+          />
+        </div>
+        <div class="cont">
+          <p>NIKE LATEST SNEAKER</p>
+          <span>$25.00<del>$35.00</del></span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-1">
+          <img
+            src="https://themewagon.github.io/eiser/img/product/inspired-product/i8.jpg"
+            alt=""
+          />
+        </div>
+        <div class="cont">
+          <p>NIKE LATEST SNEAKER</p>
+          <span>$25.00<del>$35.00</del></span>
+        </div>
+      </div>
+    </div>
+    <div class="latest-blog">
+      <h2>LATEST BLOG</h2>
+      <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <div class="latest-image2">
+      <div class="latest-image">
+        <div class="latest-image1">
+          <img
+            src="https://themewagon.github.io/eiser/img/b1.jpg"
+            alt=""
+            class="himage"
+          />
+        </div>
+        <div class="para">
+          <p>By Admin<span>2 Comments</span></p>
+          <h5>Ford clever bed stops your sleeping partner hogging the whole</h5>
+          <p>
+            Let one fifth i bring fly to divided face for bearing the divide
+            unto seed winged divided light Forth
+          </p>
+          <h6>LEARN MORE</h6>
+        </div>
+      </div>
+      <div class="latest-image">
+        <div class="latest-image1">
+          <img
+            src="	https://themewagon.github.io/eiser/img/b2.jpg"
+            alt=""
+            class="himage"
+          />
+        </div>
+        <div class="para">
+          <p>By Admin<span>2 Comments</span></p>
+          <h5>Ford clever bed stops your sleeping partner hogging the whole</h5>
+          <p>
+            Let one fifth i bring fly to divided face for bearing the divide
+            unto seed winged divided light Forth
+          </p>
+          <h6>LEARN MORE</h6>
+        </div>
+      </div>
+      <div class="latest-image">
+        <div class="latest-image1">
+          <img
+            src="https://themewagon.github.io/eiser/img/b3.jpg"
+            alt=""
+            class="himage"
+          />
+        </div>
+        <div class="para">
+          <p>By Admin<span>2 Comments</span></p>
+          <h5>Ford clever bed stops your sleeping partner hogging the whole</h5>
+          <p>
+            Let one fifth i bring fly to divided face for bearing the divide
+            unto seed winged divided light Forth
+          </p>
+          <h6>LEARN MORE</h6>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer1">
+        <div class="mul">
+          <ul>
+            <li>Top Products</li>
+            <li>Quick Links</li>
+            <li>Features</li>
+            <li>Resources</li>
+            <li>Newsletter</li>
+          </ul>
+        </div>
+        <div class="mul1">
+          <ul>
+            <li>Managed Website</li>
+            <li>Manage Reputation</li>
+            <li>Power tools</li>
+            <li>Marketing Service</li>
+          </ul>
+        </div>
+        <div class="mul2">
+          <ul>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+        <div class="mul3">
+          <ul>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+        <div class="mul4">
+          <ul>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Agencies</li>
+          </ul>
+        </div>
+        <div class="mul5">
+          <span style="color: #797979"
+            >You can trust us. we only send promo offers,</span
+          >
+          <input
+            type="email"
+            placeholder="Your Email Address"
+            style="
+              padding: 20px 40px;
+              background-color: rgba(255, 255, 255, 0.15);
+              margin-top: 8%;
+              border: none;
+            "
+          />
+          <div class="subs">
+            <button
+              style="background-color: #71cd14; color: white; padding: 3.5%"
+            >
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+        <div class="copyright">
+          <span
+            >Copyright ©2024 All rights reserved | This template is made with
+            <i class="fa-regular fa-heart"></i> by
+            <span style="color: #71cd14">Colorlib</span></span
+          >
+        </div>
+        <div class="icon">
+          <i
+            style="
+              margin-right: 2%;
+              height: 40px;
+              width: 40px;
+              background-color: rgba(255, 255, 255, 0.15);
+              text-align: center;
+              padding: 10px;
+            "
+            class="fa-brands fa-facebook-f"
+          ></i>
+          <i
+            style="
+              margin-right: 2%;
+              height: 40px;
+              width: 40px;
+              background-color: rgba(255, 255, 255, 0.15);
+              text-align: center;
+              padding: 10px;
+            "
+            class="fa-brands fa-twitter"
+          ></i>
+          <i
+            style="
+              margin-right: 2%;
+              height: 40px;
+              width: 40px;
+              background-color: rgba(255, 255, 255, 0.15);
+              text-align: center;
+              padding: 10px;
+            "
+            class="fa-solid fa-earth-americas"
+          ></i>
+          <i
+            style="
+              margin-right: 2%;
+              height: 40px;
+              width: 40px;
+              background-color: rgba(255, 255, 255, 0.15);
+              text-align: center;
+              padding: 10px;
+            "
+            class="fa-brands fa-square-behance"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

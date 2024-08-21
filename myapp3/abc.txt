@@ -1,0 +1,5 @@
+<BrowserRouter>
+ <Routes>
+   <Route path = "" element = {<Cart/>}><Route/>
+ </Routes>
+</BrowserRouter>
