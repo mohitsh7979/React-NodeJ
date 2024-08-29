@@ -1,0 +1,243 @@
+/* productdetails css */
+
+
+
+.b1 {
+    width: 10%;
+    margin-left: 135px;
+    padding: 20px;
+    }
+    
+    .b2 {
+    position: absolute;
+    left: 30%;
+    top: 0%;
+    padding: 30px;
+    }
+    
+    .b2 ul li {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 40px;
+    }
+    
+    .b3 {
+    position: absolute;
+    width: 20%;
+    left: 80%;
+    top: 20%;
+    }
+    
+    .b3 span {
+    margin-left: 10px;
+    }
+    
+    .box1 {
+    position: relative;
+    background-color: #f6f6f6;
+    height: 200px;
+    }
+    
+    .box1a {
+    position: absolute;
+        top: 30%;
+        left: 8%;
+        line-height: 2;
+    }
+    
+    .box1b {
+    position: absolute;
+    top: 38%;
+    left: 78%;
+    color: grey;
+    }
+    
+    #x1 {
+    height: 100px;
+    }
+    
+    @media (min-width:1000px) {
+    .main {
+        max-width: 1200px;
+        margin-left: 100px;
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+        column-gap: 90px;
+        margin-right: 100px;
+    }
+    }
+    
+    .main1 {
+    height: 600px;
+    background-color: white;
+    }
+    
+    .main11 {
+    position: relative;
+    
+    }
+    
+    .main11 img {
+    width: 100%;
+    height: 600px;
+    }
+    
+    .innermain1 {
+    height: 100px;
+    margin-top: 65px;
+    }
+    
+    .innermain2 {
+    position: relative;
+    border-bottom: 1px solid lightgrey;
+    }
+    
+    .innermain22 {
+    font-size: 13px;
+    color: rgb(72, 72, 72);
+    }
+    
+    .innermain23 {
+    position: absolute;
+    left: 13%;
+    top: 0%;
+    }
+    
+    .line1 p {
+    margin-left: 1px;
+    margin-top: 30px;
+    color: rgb(100, 100, 100);
+    font-size: 14.8px;
+    line-height: 1.5;
+    }
+    
+    #quantity {
+    margin-left: 10px;
+    width: 70px;
+    padding: 5px;
+    }
+    
+    /* .cart {
+    height: 40px;
+    width: 291px;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    column-gap: 18px;
+    } */
+    
+    .s1 {
+    height: 40px;
+    }
+    
+    .s1 button {
+    height: 40px;
+    width: 200px;
+    background-color:#71cd14 ;
+    border: none;
+    font-size: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    }
+
+    .s1 button:hover{
+    border: 1px solid #71cd14;
+    background-color: white;
+    color: #71cd14;
+    
+    }
+    
+    .s2 {
+    background-color: rgb(227, 233, 231);
+    padding: 12px ;
+    }
+    
+    
+    .box3{
+    /* height: 600px; */
+    margin-top: 50px;
+    border: 1px solid rgb(231, 230, 230);
+    }
+    @media (min-width:1000px) {
+    .box3 {
+        max-width: 1200px;
+        margin-left: 100px;
+        display: grid;
+        grid-template-rows: 1fr 6.5fr;
+        margin-right: 100px;
+    }
+    }
+    .box31{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(243, 246, 248);
+    
+    }
+    .box32{
+    
+    width: 100%;
+    /* height:  100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* visibility: hidden; */
+    }
+    .box33{
+    height: 100%;
+    margin: 20px;
+    
+    }
+    .box34{
+    height: 100%;
+    
+    }
+    .btn{
+    margin-top: 20px;
+    margin-left: 120px;
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    }
+    
+    .btn:hover{
+    background-color:#71cd14; 
+    color: white;
+    }
+    .input{
+    margin-top: 20px;
+    height: 40px;
+    width: 480px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 209, 209);
+    padding-left: 10px;
+    }
+    textarea{
+    margin-top: 20px;
+    height: 50px;
+    width: 480px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 209, 209);
+    }
+    #submit{
+    margin-top: 20px;
+    margin-left: 330px;
+    height: 40px;
+    width: 150px;
+    background-color: #71cd14;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    }
+    #submit:hover{
+    background-color: white;
+    color: #71cd14;
+    border: 1px solid #71cd14 ;
+    }
+    .box33 p{
+    /* font-size: 13px; */
+    line-height: 2;
+    margin-top: 10px;
+    color: gray;
+    font-family: sans-serif;
+    }

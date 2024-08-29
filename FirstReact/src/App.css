@@ -1,0 +1,598 @@
+.image1 {
+    background-image: url("https://themewagon.github.io/eiser/img/banner/banner-bg.jpg");
+    height: 130vh;
+    font-family: sans-serif;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.image1 p {
+    color: white;
+    font-size: 14px;
+    padding-left: 90px;
+    padding-top: 230px;
+    margin-bottom: 15px;
+}
+
+.image1 h3 {
+    color: white;
+    font-size: 60px;
+    padding-left: 85px;
+    margin-bottom: 15px;
+}
+
+.image1 span {
+    color: #71cd14;
+    font-size: 60px;
+}
+
+.image1 h4 {
+    padding-left: 87px;
+    color: white;
+    margin-bottom: 50px;
+
+}
+
+#btn {
+    color: white;
+}
+
+.button {
+    margin-left: 85px;
+    background-color: #71cd14;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.button:hover {
+    color: #71cd14;
+    background-color: transparent;
+
+    border: 1px solid #71cd14;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 170px;
+    width: 250px;
+    border: 1px solid rgb(228, 227, 227);
+    margin: 5px 0px;
+}
+
+.box p {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.box span {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(145, 144, 144);
+}
+
+.box i {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.fetured-product h2 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.fetured-product p {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    color: rgb(144, 141, 141);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.image2 {
+    display: flex;
+    /* justify-content: center; */
+    margin: 35px;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    width: 350px;
+    height: 450px;
+    border: 1px solid rgb(196, 196, 196);
+    margin-top: 40px;
+    flex-grow: 1 1;
+    margin-left: 30px;
+}
+
+.product-image1 img {
+    height: 350px;
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    margin: 5px 20px;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.content span {
+    margin-left: 20px;
+    font-size: 15px;
+    color: rgb(181, 178, 178);
+}
+
+.content h6 {
+    font-size: 25px;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+
+@media (max-width:400px) {
+
+    .image1 h3 {
+
+        font-size: 30px;
+    }
+
+}
+
+.mencollection {
+    background-image: url(https://themewagon.github.io/eiser/img/offer-bg.png);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.typeing {
+    p {
+        padding: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        color: #4a4a4a;
+        margin-left: 50px;
+    }
+
+    h1 {
+        font-size: 90px;
+        font-family: sans-serif
+    }
+
+    margin-left: 400px;
+    padding: 100px;
+
+}
+
+.typeing input:hover {
+    background-color: white;
+    color: #71cd14;
+    border: 1px solid #71cd14;
+}
+
+.col {
+    background-color: #71cd14;
+    color: white;
+    padding: 15px 25px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+
+#time {
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-left: 130px;
+}
+
+.new-product h2 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.new-product p {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    color: rgb(144, 141, 141);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.collection {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.collect-1 {
+    height: 789px;
+    width: 43%;
+    margin: 15px;
+    /* border: 2px solid black; */
+}
+
+.collect {
+    height: 750px;
+    width: 43%;
+    margin: 15px;
+    background-color: rgb(241, 243, 244);
+    /* border: 2px solid black; */
+
+    img {
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    P {
+        font-family: sans-serif;
+        margin-left: 170px;
+        margin-top: 90px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-family: sans-serif;
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+
+    p span {
+        font-size: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 50px;
+    }
+
+    button {
+        margin-left: 200px;
+        margin-top: 30px;
+        background-color: #71cd14;
+        padding: 15px 30px;
+        color: white;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+    }
+
+}
+
+.collect button:hover {
+    background-color: white;
+    color: #71cd14;
+    border: 1px solid;
+
+}
+
+#collect1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.pics1 {
+    width: 256px;
+    height: 350px;
+    border: 1px solid rgb(235, 231, 231);
+    margin-left: 14px;
+    
+}
+
+/* .pics2 {
+    width: 256px;
+    height: 350px;
+    border: 1px solid rgb(235, 231, 231);
+    margin-left: 22px;
+
+}
+
+.pics3 {
+    width: 256px;
+    height: 350px;
+    border: 1px solid rgb(235, 231, 231);
+    margin-top: 45px;
+}
+
+.pics4 {
+    width: 256px;
+    height: 350px;
+    border: 1px solid rgb(235, 231, 231);
+    margin-left: 22px;
+    margin-top: 45px;
+} */
+
+.imga {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.imga img {
+    width: 100%;
+    height: 250px;
+}
+
+.con p {
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.con p:hover {
+    color: #71cd14;
+    cursor: pointer;
+
+}
+
+.con span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 800px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.con del {
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #797979;
+}
+
+.inspired-product h2 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.inspired-product p {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    color: rgb(144, 141, 141);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 260px;
+    height: 350px;
+    border: 1px solid rgb(235, 231, 231);
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.item-1 {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.cont p {
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.cont p:hover {
+    color: #71cd14;
+    cursor: pointer;
+
+}
+
+.cont span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 800px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cont del {
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #797979;
+}
+
+.latest-blog h2 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.latest-blog p {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    color: rgb(144, 141, 141);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.latest-image2 {
+    display: flex;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.latest-image:hover h5 {
+    color: #71cd14;
+    cursor: pointer;
+}
+
+.latest-image:hover a {
+    color: #71cd14;
+    cursor: pointer;
+}
+
+.latest-image {
+    width: 350px;
+    margin-top: 40px;
+    flex-grow: 1 1;
+    margin-left: 30px;
+}
+
+.latest-image1 img {
+    height: 250px;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.latest-image1 img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.para {
+    font-family: sans-serif;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.para p {
+    margin-top: 20px;
+    color: #797979;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.para span {
+    margin-left: 20px;
+    font-size: 15px;
+    color: #797979;
+}
+
+.para h5 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 530;
+}
+
+.para h6 {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+/* hover product image */
+
+.product-image1 {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hover_div {
+    height: 50px;
+    background-color: rgba(113, 205, 20, 0.4);
+    transition: all 400ms ease;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    gap: 25px;
+}
+
+.icondiv {
+    margin-top: 5px;
+    height: 40px;
+    width: 42px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    transition: all 400ms ease;
+    font-size: 14px;
+
+}
+
+.icondiv:hover {
+    background-color: #71cd14;
+    color: white;
+    cursor: pointer;
+}
+
+.icondiv i {
+    margin-top: 13px;
+}
+
+.product-image1:hover .hover_div {
+    transform: translateY(-55px);
+}
+
+.content:hover a {
+    cursor: pointer;
+    color: #71cd14;
+}
+
+/* hover newproduct image */
+
+.imga:hover .hover_div {
+    transform: translateY(-55px);
+}
+
+/* hover inspired prodoct image */
+
+.item-1:hover .hover_div {
+    transform: translateY(-55px);
+}
+
+
+
+
+
+
+
+

@@ -34,19 +34,19 @@ function Header() {
             <Link to={""} className="hover">Shop</Link>
             <ul className="shopcategory">
               <li className="sub-menu">
-                <Link to={"/category/"}>Shop Category</Link>
+                <Link to="/category/">Shop Category</Link>
               </li>
               <hr />
               <li className="sub-menu">
-                <Link to={"/detail/"}>Product Detail</Link>
+                <Link to="/detail/">Product Detail</Link>
               </li>
               <hr />
               <li className="sub-menu">
-                <Link to={"/checkout/"}>Product Checkout</Link>
+                <Link to="/checkout/">Product Checkout</Link>
               </li>
               <hr />
               <li className="sub-menu">
-                <Link to={"/cart/"}>Shopping Cart</Link>
+                <Link to="/cart/">Shopping Cart</Link>
               </li>
             </ul>
           </li>

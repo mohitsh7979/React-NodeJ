@@ -1,0 +1,172 @@
+/* shopcategory css */
+
+
+
+
+.box1 {
+    /* position: relative; */
+    background-color: #f6f6f6;
+    height: 200px;
+
+}
+
+.box1a {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    line-height: 2;
+}
+
+.box1b {
+    position: absolute;
+    top: 38%;
+    left: 78%;
+    color: grey;
+}
+
+
+
+/* #x1 {
+    height: 100px;
+} */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+        margin-left: 80px;
+        display: grid;
+        grid-template-columns: 1.25fr 4fr;
+    }
+}
+
+
+.rightbox {
+    margin-left: 30px;
+    margin-top: 5px; 
+    /* border: 2px solid black; */
+}
+
+.leftb1 {
+    color: gray;
+    margin-top: 5px;
+    border: 1px solid #eff2f3;
+    padding: 25px;
+}
+
+.title {
+    padding: 10px;
+    font-size: 13px;
+    border-bottom: 1px solid green;
+}
+
+.option {
+    margin: 30px;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.box3 {
+    background-color: #f6f6f6;
+    display: flex;
+    /* width: 100%; */
+    
+}
+
+.default {
+    padding: 12px;
+    margin-left: 26px;
+   
+}
+
+.default1 {
+    background-color: white;
+    border: none;
+    width: 200px;
+    height: 38px;
+}
+
+.sort12 {
+    background-color: white;
+    border: none;
+    width: 200px;
+    height: 38px;
+
+}
+
+.box4 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 3fr 3fr;
+    column-gap: 30px;
+    margin-top: 40px;
+}
+
+.b41 {
+    height: 370px;
+    border-bottom: 0.5 gray;
+}
+
+.b41 img {
+    height: 280px;
+    width: 100%;
+}
+
+.inner2 {
+    margin: 20px;
+}
+
+.inner2 p {
+    font-size: 15px;
+}
+
+.inner3 {
+    position: relative;
+}
+
+.i1 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.i2 {
+    color: gray;
+    position: absolute;
+    top: 5px;
+    left: 110px;
+    font-size: 15px;
+}
+
+.inner1 {
+    height: 270px;
+    overflow: hidden;
+}
+
+.cart-info {
+    height: 50px;
+    background-color: rgba(113, 205, 20, 0.4);
+    transition: all 400ms ease;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    gap: 25px;
+}
+
+.circle {
+    margin-top: 3px;
+    height: 40px;
+    width: 42px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+.circle i {
+    margin-top: 12px;
+}
+
+.b41:hover .cart-info {
+    transform: translateY(-60px);
+}

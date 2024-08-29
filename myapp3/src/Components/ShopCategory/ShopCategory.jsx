@@ -244,15 +244,7 @@ function ShopCategory() {
                     </div>
                   </div>
                 </div>
-                <div className="inner2">
-                  <p>Latest Men's Sneaker</p>
-                </div>
-                <div className="inner3">
-                  <div className="i1">$25.00</div>
-                  <div className="i2">
-                    <del>$35.00</del>
-                  </div>
-                </div>
+             
               </div>
               <div className="b41">
                 <div className="inner1">

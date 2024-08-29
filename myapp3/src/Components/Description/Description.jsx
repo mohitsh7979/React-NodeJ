@@ -1,5 +1,6 @@
 import React from "react";
 import "./Description.css"
+import { Link } from "react-router-dom";
 function Description() {
   return (
     <>
@@ -75,7 +76,9 @@ function Description() {
             </div>
             <div className="cart">
               <div className="s1">
-                <button type="submit">Add to Cart</button>
+                <button type="submit">
+                 <Link to="/cart/">Add to Cart</Link> 
+                </button>
               </div>
               <div className="s2">
                 <i className="fa-solid fa-diamond"></i>

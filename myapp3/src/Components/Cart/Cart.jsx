@@ -1,5 +1,6 @@
 import React from "react";
 import "./Cart.css"
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   return (
@@ -151,9 +152,9 @@ const Cart = () => {
           </div>
           <div className="checkout">
             <button className="cc">CONTINUE SHOPPING</button>
-            <a href className="ahover">
+            <Link to="/checkout/" className="ahover">
               Proceed to chechout
-            </a>
+            </Link>
           </div>
         </div>
       </div>
